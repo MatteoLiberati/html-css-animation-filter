@@ -153,55 +153,65 @@
 
 /* Esercizio 13 */
 .ex-13-button:hover .ex-13-top-white{
-    animation: turn-around-top 1.2s infinite;
+    animation: turn-around-top 4s linear infinite;
 }
 
 .ex-13-button:hover .ex-13-bottom-white{
-    animation: turn-around-bottom 1.2s infinite;
+    animation: turn-around-bottom 4s linear infinite;
 }
 
 @keyframes turn-around-top{
     0%{ 
-        transform: rotate(0deg);
-        left: 20%;
+        top: -10px;
+        left: 10%;
     }
-    25%{
-        transform: rotate(0deg);
-        top: 0;
-        left: calc(100% - 60px)
+    24%{
+        top: -10px;
+        left: calc(100% - 30px)
+    }
+    48%{
+        top: calc(100% - 10px);
+        left: calc(100% - 30px)
+    }
+    72%{
+        top: calc(100% - 10px);
+        left: -30px
+    }
+    96%{
+        top: -10px;
+        left: -30px
     }
     100%{
-        left: 20%;
+        top: -10px;
+        left: 10%;
     }
+
 }
 
-/* 
-.ex-12-button, .ex-13-button {
-    position: relative;
-    display: block;
-    width: 200px;
-    height: 70px;
-    text-transform: uppercase;
-    border: 3px solid #1b3c59;
-    color: #1b3c59;
-    font-size: 20px;
-    line-height: 70px;
-    text-align: center;
-    text-decoration: none;
+@keyframes turn-around-bottom{
+    0%{ 
+        bottom: -10px;
+        right: 10%;
+    }
+    24%{
+        bottom: -10px;
+        right: calc(100% - 30px)
+    }
+    48%{
+        bottom: calc(100% - 10px);
+        right: calc(100% - 30px)
+    }
+    72%{
+        bottom: calc(100% - 10px);
+        right: -30px
+    }
+    96%{
+        bottom: -10px;
+        right: -30px
+    }
+    100%{
+        bottom: -10px;
+        right: 10%;
+    }
+
 }
-.ex-12-top-white, .ex-13-top-white {
-    position: absolute;
-    top: -10px;
-    left: 10%;
-    background: #f5f5f5;
-    width: 60px;
-    height: 20px;
-}
-.ex-12-bottom-white, .ex-13-bottom-white {
-    position: absolute;
-    bottom: -10px;
-    right: 20%;
-    background: #f5f5f5;
-    width: 60px;
-    height: 20px;
-} */
