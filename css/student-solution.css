@@ -94,9 +94,26 @@
 
 @keyframes rotate{
     from{
-        transform:rotate(0deg)
+        transform: rotate(0deg)
     }
     to{
         transform: rotate(360deg);
+    }
+}
+
+/* Esercizio 11 */
+.ex-11-icon:hover{
+    animation: turn270 0.8s;
+}
+
+@keyframes turn270{
+    0%{
+        transform: rotate(0deg);
+    }
+    90%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(0deg);
     }
 }
