@@ -129,25 +129,79 @@
 
 @keyframes movetop{
     0%{
-        left: 20%;
+        left: 10%;
     }
     50%{
         left: calc(100% - 60px);
     }
     100%{
-        left: 20%;
+        left: 10%;
     }
 }
 
 @keyframes movebottom{
     0%{
-        right: 20%;
+        right: 10%;
     }
     50%{
         right: calc(100% - 60px);
     }
     100%{
-        right: 20%;
+        right: 10%;
     }
 }
 
+/* Esercizio 13 */
+.ex-13-button:hover .ex-13-top-white{
+    animation: turn-around-top 1.2s infinite;
+}
+
+.ex-13-button:hover .ex-13-bottom-white{
+    animation: turn-around-bottom 1.2s infinite;
+}
+
+@keyframes turn-around-top{
+    0%{ 
+        transform: rotate(0deg);
+        left: 20%;
+    }
+    25%{
+        transform: rotate(0deg);
+        top: 0;
+        left: calc(100% - 60px)
+    }
+    100%{
+        left: 20%;
+    }
+}
+
+/* 
+.ex-12-button, .ex-13-button {
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 70px;
+    text-transform: uppercase;
+    border: 3px solid #1b3c59;
+    color: #1b3c59;
+    font-size: 20px;
+    line-height: 70px;
+    text-align: center;
+    text-decoration: none;
+}
+.ex-12-top-white, .ex-13-top-white {
+    position: absolute;
+    top: -10px;
+    left: 10%;
+    background: #f5f5f5;
+    width: 60px;
+    height: 20px;
+}
+.ex-12-bottom-white, .ex-13-bottom-white {
+    position: absolute;
+    bottom: -10px;
+    right: 20%;
+    background: #f5f5f5;
+    width: 60px;
+    height: 20px;
+} */
