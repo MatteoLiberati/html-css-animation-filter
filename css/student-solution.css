@@ -1,1 +1,11 @@
 /* STUDENT SOLUTION */
+
+/* Esercizio 1 */
+.ex-1-square{
+    background-color: white;
+    transition:background-color .5s;
+}
+
+.ex-1-square:hover{
+    background-color: red;
+}
