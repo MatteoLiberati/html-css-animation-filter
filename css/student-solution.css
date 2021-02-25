@@ -73,3 +73,15 @@
     filter: saturate(5) contrast(2); 
     border-radius: 50px;
 }
+
+.ex-9-img{
+    transition: filter 0.5s,
+                border-radius 0.8s,
+                transform 0.4s;
+}
+
+.ex-9-img:hover{
+    filter: grayscale(0.5) sepia(0.8);
+    border-radius: 50px;
+    transform: scale(1.2);
+}
