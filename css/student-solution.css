@@ -62,3 +62,14 @@
 .ex-7-img:hover{
     filter: hue-rotate(300deg) contrast(5);
 }
+
+/* Esercizio 8 */
+.ex-8-img{
+    transition: filter 0.5s, 
+                border-radius 0.8s;
+}
+
+.ex-8-img:hover{
+    filter: saturate(5) contrast(2); 
+    border-radius: 50px;
+}
